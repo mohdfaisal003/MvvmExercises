@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     android:paddingLeft="40px"
     android:paddingRight="40px"
-    android:orientation="vertical"
     tools:context=".simple_mvvm.ui.SimpleMvvmActivity">
 
     <TextView
@@ -21,7 +20,7 @@
         android:id="@+id/updateBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update"
-        android:layout_marginTop="40px"/>
+        android:layout_marginTop="40px"
+        android:text="Update" />
 
 </LinearLayout>

@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="40px"
+    android:orientation="vertical"
     android:paddingLeft="40px"
     android:paddingTop="40px"
+    android:paddingRight="40px"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/simpleMvvmBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simple Mvvm Example"/>
+        android:text="Simple Mvvm Example" />
+
+    <Button
+        android:id="@+id/networkMvvmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mvvm with Network Example" />
 
 </LinearLayout>

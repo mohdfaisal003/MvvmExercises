@@ -2,9 +2,8 @@ package com.mvvmexercises.simple_mvvm.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mvvmexercises.simple_mvvm.models.User
 
-class UserViewModel: ViewModel() {
+class UserViewModel : ViewModel() {
 
     val username = MutableLiveData<String>()
 

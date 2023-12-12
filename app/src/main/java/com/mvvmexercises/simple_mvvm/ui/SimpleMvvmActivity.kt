@@ -2,6 +2,7 @@ package com.mvvmexercises.simple_mvvm.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.mvvmexercises.databinding.ActivitySimpleMvvmBinding
 import com.mvvmexercises.simple_mvvm.viewmodels.UserViewModel
@@ -21,11 +22,13 @@ class SimpleMvvmActivity : AppCompatActivity() {
         userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 
         // Observe changes in userName and update the UI
-        userViewModel.username.observe(this, { newName -> binding.usernameTv.text = newName })
+        userViewModel.username.observe(this, Observer {
+            binding.usernameTv.text = it
+        })
 
         // Button click to update user's name
         binding.updateBtn.setOnClickListener {
-            val newName = "user_${Random.nextInt(1,100)}"
+            val newName = "user_${Random.nextInt(1, 100)}"
             userViewModel.updateUsername(newName)
         }
     }
